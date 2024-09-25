@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="author" content="Omkar Kubal">
+        <meta name="description" content="This is the main page of Machine Learning Resources">
+        
+        <title>NeuralNexus</title>
+        <link rel="icon" href="img/html_logo_300x300.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <script>
+            // ... (JavaScript code remains the same)
+        </script>
+        <script>
+            // Function to create a cookie
+            function setCookie(cname, cvalue, exdays) {
+                const d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Cookie expiration time
+                let expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+        
+            // Call the function to set a cookie with the text "Welcome to NeuralNexus"
+            setCookie("welcomeMessage", "Welcome to NeuralNexus", 7); // Expires in 7 days
+        
+            // Function to display the cookie (optional, if you want to alert the message)
+            function getCookie(cname) {
+                let name = cname + "=";
+                let decodedCookie = decodeURIComponent(document.cookie);
+                let ca = decodedCookie.split(';');
+                for(let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+        
+            // Example: Show an alert with the cookie message
+            window.onload = function() {
+                let welcomeMessage = getCookie("welcomeMessage");
+                if (welcomeMessage != "") {
+                    alert(welcomeMessage);
+                }
+            };
+        </script>
+        
+    </head>
+    <body>
+
+        <video class="video-background" autoplay loop muted>
+            <source src="img/style3.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+
+            <main>
+                <h2 style="text-align: center;">‣NeuralNexus</h2>
+                <p style="text-align: center;">
+                    <img src="img/ml1.jpeg" alt="machine-learning">
+                </p>
+                <p dir="ltr" style="text-align: center;">
+                    <span>
+                    Machine Learning tutorial covers basic and advanced concepts, specially designed to cater to both students and experienced working professionals.
+                    </span>
+                </p>
+                <p dir="ltr" style="text-align: center;">
+                    <span>
+                    This machine learning tutorial helps you gain a solid introduction to the fundamentals of machine learning and explore a wide range of techniques, including supervised, unsupervised, and reinforcement learning.
+                    </span>
+                </p>
+                <p dir="ltr" style="text-align: center;">
+                    <span>
+                        Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed. ML is one of the most exciting technologies that one would have ever come across. As it is evident from the name, it gives the computer that makes it more similar to humans: The ability to learn. Machine learning is actively being used today, perhaps in many more places than one would expect.
+                    </span>
+                </p>
+
+                <h2>
+                    <span>‣What is Machine Learning?</span> 
+                </h2>
+                <p dir="ltr" style="text-align: center;">
+                    <span>
+                    Machine learning (ML) is a subdomain of artificial intelligence (AI) that focuses on developing systems that learn—or improve performance—based on the data they ingest. Artificial intelligence is a broad word that refers to systems or machines that resemble human intelligence. Machine learning and AI are frequently discussed together, and the terms are occasionally used interchangeably, although they do not signify the same thing. A crucial distinction is that, while all machine learning is AI, not all AI is machine learning.
+                    </span>
+                </p>
+                <p style="text-align: center;">
+                    <img src="img/ml2.jpeg" alt="machine-learning" width="400" height="400">
+                </p>
+                <h2>
+                    <a href="https://www.geeksforgeeks.org/tag/machine-learning" rel="noopener">
+                        <span>
+                            ‣Recent Articles on Machine Learning
+                        </span>
+                    </a>
+                </h2>
+
+
+                <div>
+                    <h2>
+                        ‣Table of Content:
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="introduction.html">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="supervised.html"> Supervised Learning</a>
+                        </li>
+                        <li>
+                            <a href="unsupervised.html">Unsupervised</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>
+                    <span>
+                        ‣Features of Machine Learning
+                    </span>
+                </h2>
+                <ul>
+                    <li value="1">
+                        <span>
+                            Machine learning is data driven technology. Large amount of data generated by organizations on daily bases. So, by notable relationships in data, organizations makes better decisions.
+                        </span>
+                    </li>
+                    <li value="2">
+                        <span>
+                            Machine can learn itself from past data and automatically improve. 
+                        </span>
+                    </li>
+                    <li value="3">
+                        <span>
+                            From the given dataset it detects various patterns on data.
+                        </span>
+                    </li>
+                    <li value="4">
+                        <span>
+                            For the big organizations branding is important and it will become more easy to target relatable customer base.
+                        </span>
+                    </li>
+                    <li value="5">
+                        <span>
+                            It is similar to data mining because it is also deals with the huge amount of data.
+                        </span>
+                    </li>
+                    <p style="text-align: center;">
+                        <img src="img/ml3.webp" alt="machine-learning">
+                    </p>
+                </ul>
+
+                <h2>
+                    <span>‣Types of Machine Learning</span>
+                </h2>
+                <ul>
+                    <li>
+                        <strong>Supervised Learning:</strong> The algorithm learns from labeled data and makes predictions on new, unseen data.
+                    </li>
+                    <li>
+                        <strong>Unsupervised Learning:</strong> The algorithm discovers patterns and structures in unlabeled data without explicit guidance.
+                    </li>
+                    <li>
+                        <strong>Semi-Supervised Learning:</strong> A combination of supervised and unsupervised learning, where the algorithm learns from a mix of labeled and unlabeled data.
+                    </li>
+                    <li>
+                        <strong>Reinforcement Learning:</strong> The algorithm learns through interaction with an environment, receiving rewards or penalties for its actions.
+                    </li>
+                </ul>
+
+                <h2>
+                    <span>‣Applications of Machine Learning</span>
+                </h2>
+                <ul>
+                    <li>Image and Speech Recognition</li>
+                    <li>Natural Language Processing</li>
+                    <li>Recommendation Systems</li>
+                    <li>Fraud Detection</li>
+                    <li>Predictive Analytics</li>
+                    <li>Autonomous Systems</li>
+                </ul>
+
+                <h2>
+                    <span>‣Machine Learning Algorithms</span>
+                </h2>
+                <ul>
+                    <li>Linear Regression</li>
+                    <li>Logistic Regression</li>
+                    <li>Decision Trees</li>
+                    <li>Random Forests</li>
+                    <li>Support Vector Machines (SVM)</li>
+                    <li>Neural Networks</li>
+                    <li>K-Means Clustering</li>
+                </ul>
+
+                <h2>
+                    <span>‣Machine Learning Tools and Libraries</span>
+                </h2>
+                <ul>
+                    <li>Python Libraries (NumPy, Pandas, Scikit-learn, TensorFlow, Keras)</li>
+                    <li>R Libraries (caret, glmnet, randomForest, e1071)</li>
+                    <li>Machine Learning Frameworks (Apache Spark MLlib, H2O, Amazon SageMaker)</li>
+                </ul>
+
+                <h2>
+                    <span>‣Machine Learning Workflow</span>
+                </h2>
+                <ol>
+                    <li>Data Collection and Preparation</li>
+                    <li>Feature Selection and Engineering</li>
+                    <li>Model Selection and Training</li>
+                    <li>Model Evaluation and Validation</li>
+                    <li>Model Deployment and Monitoring</li>
+                </ol>
+
+                <h2>
+                    <span>‣Challenges and Considerations</span>
+                </h2>
+                <ul>
+                    <li>Data Quality and Preprocessing</li>
+                    <li>Overfitting and Underfitting</li>
+                    <li>Bias and Fairness</li>
+                    <li>Interpretability and Explainability</li>
+                    <li>Scalability and Performance</li>
+                </ul>
+
+                <h2>
+                    <span>‣Future of Machine Learning</span>
+                </h2>
+                <ul>
+                    <li>Emerging Trends and Research Areas</li>
+                    <li>Advancements in Deep Learning</li>
+                    <li>Explainable AI (XAI)</li>
+                    <li>Federated Learning</li>
+                    <li>AutoML and MLOps</li>
+                </ul>
+
+                <h2>
+                    <span>‣Resources and Further Reading</span>
+                </h2>
+                <ul>
+                    <li>Online Courses and Tutorials</li>
+                    <li>Books and Research Papers</li>
+                    <li>Machine Learning Communities and Forums</li>
+                    <li>Conferences and Events</li>
+                </ul>
+
+            </body>
+            <p>
+                <a href="#">BACK TO TOP</a>
+            </p>
+            </main>
+        </div>
+</html>

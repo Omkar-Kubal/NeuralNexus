@@ -1,0 +1,61 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #2e2e2e; /* Slightly lighter dark color for the background */
+    color: #f5f5f5; /* Light gray for better readability */
+    font-family: Arial, sans-serif; /* Ensuring a clean, readable font */
+}
+
+a {
+    color: #1e90ff; /* Dodger Blue for links */
+}
+
+a:visited {
+    color: #4682b4; /* Steel Blue for visited links */
+}
+
+a:hover, a:active {
+    color: #6495ed; /* Cornflower Blue for hover/active links */
+}
+
+h2 {
+    color: #00ced1; /* Dark Turquoise for headings to stand out */
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+ul {
+    list-style-type: none; /* Removing default list styling */
+    padding: 0;
+}
+
+ul li {
+    background: #444; /* Dark gray background for list items */
+    margin: 10px 0; /* Spacing between list items */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    color: #f5f5f5; /* Ensuring list item text color is readable */
+}
+
+ul li a {
+    color: #1e90ff; /* Making list item links consistent with other links */
+    text-decoration: none; /* Removing underline from links */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Adding underline on hover for links */
+}
+
+img {
+    border-radius: 10px; /* Rounded corners for images */
+    max-width: 100%; /* Ensuring images are responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centering images */
+}
